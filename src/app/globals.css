@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root variables for light and dark mode */
+:root {
+  --background: #ffffff; /* Light mode background */
+  --foreground: #171717; /* Light mode text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212; /* Dark mode background (black-gray mix) */
+    --foreground: #e4e4e4; /* Dark mode text color */
+  }
+}
+
+/* Global body styles */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom utility class for balanced text wrapping */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

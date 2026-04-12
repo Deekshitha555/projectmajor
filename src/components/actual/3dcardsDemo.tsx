@@ -48,11 +48,11 @@ export function ThreeDCardDemo({ data, onPlayNow }: ThreeDCardDemoProps) {
               {card.audio || card.link ? (
                 <button
                   onClick={() => {
-                    const mediaSrc = card.audio || card.link;
-                    if (onPlayNow) {
-                      onPlayNow(mediaSrc); // Call onPlayNow if available
-                    }
-                  }}
+  const mediaSrc = card.audio || card.link;
+  if (onPlayNow && mediaSrc) {
+    onPlayNow(mediaSrc);
+  }
+}}
                   className="px-4 py-2 bg-blue-500 text-white rounded-xl text-xs font-normal dark:bg-blue-700 hover:bg-blue-600"
                 >
                   Play now →

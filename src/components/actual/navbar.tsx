@@ -89,7 +89,7 @@ export function NavbarDemo() {
           <MobileNavHeader>
             <Link href="/">
               <Image
-                src="/images/logo.png"
+                src="/images/logo1.png"
                 alt="Stress Buster Logo"
                 width={60}
                 height={60}
@@ -97,7 +97,7 @@ export function NavbarDemo() {
               />
             </Link>
             <span className="pt-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-              Stress Buster
+             Harmony Health Ai
             </span>
             <MobileNavToggle
               isOpen={isMobileMenuOpen}
@@ -107,6 +107,7 @@ export function NavbarDemo() {
           <MobileNavMenu
             isOpen={isMobileMenuOpen}
             onClose={() => setIsMobileMenuOpen(false)}
+            className="bg-gray-900 text-white"
           >
             {navItems.map((item, idx) => (
               <Link

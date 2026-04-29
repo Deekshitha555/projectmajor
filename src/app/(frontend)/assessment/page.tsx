@@ -18,6 +18,16 @@ const QUESTIONS: Question[] = [
   { id: "q3", text: "Do you find it hard to focus or stay motivated?" },
   { id: "q4", text: "How often do negative thoughts disturb your day?" },
   { id: "q5", text: "How is your sleep and appetite recently?" },
+  { id: "q6", text: "Do you feel tired even after rest?" },
+  { id: "q7", text: "Do you feel lonely or isolated often?" },
+  { id: "q8", text: "Do you overthink small situations?" },
+  { id: "q9", text: "Do you feel overwhelmed by daily tasks?" },
+  { id: "q10", text: "Do you find it hard to relax?" },
+  { id: "q11", text: "Do you experience low self-esteem or self-doubt?" },
+  { id: "q12", text: "Do you avoid social interactions?" },
+  { id: "q13", text: "Do you feel emotionally drained often?" },
+  { id: "q14", text: "Do you struggle staying positive?" },
+  { id: "q15", text: "Do you feel mentally exhausted most days?" },
 ];
 
 const OPTIONS: Option[] = [
@@ -103,7 +113,7 @@ export default function Assessment() {
   return (
     <div className="max-w-3xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">Mental Health Assessment</h1>
-      <p className="text-gray-800 mb-6">
+      <p className="text-white mb-6">
         Answer a few questions and describe your feelings. We will analyze your responses and provide guidance.
       </p>
 
@@ -266,4 +276,4 @@ export default function Assessment() {
       )}
     </div>
   );
-}
+} 

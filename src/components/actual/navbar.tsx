@@ -73,7 +73,7 @@ export function NavbarDemo() {
                 className="object-contain rounded-lg"
               />
               <span className="pt-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-                HarmonyHealth AI
+                MindSphere
               </span>
             </Link>
           </div>
